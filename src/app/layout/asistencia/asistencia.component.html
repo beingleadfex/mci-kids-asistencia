@@ -1,3 +1,16 @@
-<p>
-  asistencia works!
-</p>
+<div [@routerTransition]>
+    <p>
+      asistencia works!
+    </p>
+  <div class="row">
+    <div class="col-xl-4 text-xs-center" *ngFor="let enlace of enlaces">
+      <div class="card mb-3" >
+        <div class="card-body" routerLink="{{enlace.ruta}}" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="{{enlace.icono}}"></i>&nbsp; {{enlace.descripcion}}
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <hr>
+</div>

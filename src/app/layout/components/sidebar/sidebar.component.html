@@ -1,7 +1,7 @@
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
     <div class="list-group">
         <a *ngFor="let enlace of enlaces" routerLink="{{enlace.ruta}}" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="{{enlace.icono}}"></i>&nbsp;{{ 'Dashboard' | translate }}
+            <i class="{{enlace.icono}}"></i>&nbsp;{{ enlace.descripcion | translate }}
         </a>
 
         <div class="nested-menu">
