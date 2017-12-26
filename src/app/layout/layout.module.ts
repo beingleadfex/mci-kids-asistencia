@@ -7,6 +7,9 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AsistenciaComponent } from './asistencia/asistencia.component';
+
+import { EnlaceService } from './components/sidebar/enlace.service';
 
 @NgModule({
     imports: [
@@ -15,6 +18,15 @@ import { HeaderComponent } from './components/header/header.component';
         TranslateModule,
         NgbDropdownModule.forRoot()
     ],
-    declarations: [LayoutComponent, SidebarComponent, HeaderComponent]
+    declarations:
+    [
+        LayoutComponent,
+        SidebarComponent,
+        HeaderComponent,
+        //AsistenciaComponent
+    ],
+    providers: [
+        EnlaceService,
+    ]
 })
 export class LayoutModule {}
