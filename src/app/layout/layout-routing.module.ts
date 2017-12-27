@@ -7,8 +7,8 @@ const routes: Routes = [
         path: '',
         component: LayoutComponent,
         children: [
-            { path: '', redirectTo: 'asistencia' },
-            { path: 'asistencia', loadChildren: './asistencia/asistencia.module#AsistenciaModule' },
+            { path: '', redirectTo: 'dashboard' },
+            { path: 'mcikids', loadChildren: './mcikids/mcikids.module#McikidsModule' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },

@@ -6,12 +6,12 @@ import { Enlace } from './enlace';
 import { EnlaceService } from './enlace.service';
 
 @Component({
-  selector: 'app-asistencia',
-  templateUrl: './asistencia.component.html',
-  styleUrls: ['./asistencia.component.scss'],
+  selector: 'app-mcikids',
+  templateUrl: './mcikids.component.html',
+  styleUrls: ['./mcikids.component.scss'],
   animations: [routerTransition()]
 })
-export class AsistenciaComponent implements OnInit {
+export class McikidsComponent implements OnInit {
   enlaces: Enlace[] = [];
 
   constructor(private enlaceService: EnlaceService) { }
@@ -20,6 +20,6 @@ export class AsistenciaComponent implements OnInit {
     this.enlaceService.getEnlaces()
         .then(enlaces => this.enlaces = enlaces);
   }
-  
+
 
 }

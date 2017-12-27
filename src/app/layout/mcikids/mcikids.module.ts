@@ -3,8 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgbCarouselModule, NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { AsistenciaRoutingModule } from './asistencia-routing.module';
-import { AsistenciaComponent } from './asistencia.component';
+import { McikidsRoutingModule } from './mcikids-routing.module';
+import { McikidsComponent } from './mcikids.component';
 import {
     TimelineComponent,
     NotificationComponent,
@@ -15,7 +15,7 @@ import { EnlaceService } from './enlace.service';
 import { RegistroComponent } from './components/registro/registro.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { ColacionComponent } from './components/colacion/colacion.component';
-import { FichasComponent } from './components/fichas/fichas.component'; 
+import { FichasComponent } from './components/fichas/fichas.component';
 
 @NgModule({
     imports: [
@@ -24,21 +24,21 @@ import { FichasComponent } from './components/fichas/fichas.component';
         NgbCarouselModule.forRoot(),
         NgbAlertModule.forRoot(),
         NgbModule.forRoot(),
-        AsistenciaRoutingModule,
+        McikidsRoutingModule,
         StatModule
     ],
     declarations: [
-        AsistenciaComponent,
+        McikidsComponent,
         TimelineComponent,
         NotificationComponent,
         ChatComponent,
-        RegistroComponent,
-        CursoComponent,
-        ColacionComponent,
-        FichasComponent
+        //RegistroComponent,
+        //CursoComponent,
+        //ColacionComponent,
+        //FichasComponent
     ],
     providers: [
         EnlaceService,
     ]
 })
-export class AsistenciaModule {}
+export class McikidsModule {}

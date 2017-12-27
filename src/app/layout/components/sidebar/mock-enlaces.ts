@@ -9,7 +9,7 @@ export const ENLACES: Enlace[] = [
   },
   {
     id: 2,
-    ruta: '/asistencia',
+    ruta: '/mcikids',
     descripcion: 'Asistencia-app',
     icono: 'fa fa-fw fa-dashboard'
   },

@@ -9,7 +9,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import { AsistenciaComponent } from './asistencia/asistencia.component';
+import { McikidsComponent } from './mcikids/mcikids.component';
 
 import { EnlaceService } from './components/sidebar/enlace.service';
 
