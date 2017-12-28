@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { McikidsComponent } from './mcikids.component';
+
+import { FichasComponent } from './fichas.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: McikidsComponent,
-        children: []
+        component: FichasComponent
     }
 ];
 
@@ -14,5 +14,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class McikidsRoutingModule {
-}
+export class FichasRoutingModule {}

@@ -12,10 +12,10 @@ import {
 } from './components';
 import { StatModule } from '../../shared';
 import { EnlaceService } from './enlace.service';
-import { RegistroComponent } from './components/registro/registro.component';
-import { CursoComponent } from './components/curso/curso.component';
-import { ColacionComponent } from './components/colacion/colacion.component';
-import { FichasComponent } from './components/fichas/fichas.component';
+//import { RegistroComponent } from './components/registro/registro.component';
+//import { CursoComponent } from './components/curso/curso.component';
+//import { ColacionComponent } from './components/colacion/colacion.component';
+//import { FichasComponent } from './components/fichas/fichas.component';
 
 @NgModule({
     imports: [
