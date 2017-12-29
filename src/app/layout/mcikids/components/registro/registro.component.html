@@ -6,15 +6,28 @@
 <div class="test-foto">
     <i class="fa fa-user"></i>
 </div>
-
+<!--
 <div class="row">
   <div class="col-xl-4 text-xs-center">
-    <div class="card mb-3" >
+    <div class="card mb-3">
+
       <div class="card-body" class="list-group-item">
           Nombre
       </div>
     </div>
   </div>
  </div>
+-->
+ <form [formGroup]="registroForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">Nombre:
+      <input class="form-control" formControlName="nombre">
+    </label>
+  </div>
+</form>
+
+<hr>
+<p>Form value: {{ registroForm.value | json }}</p>
+<p>Form status: {{ registroForm.status | json }}</p>
 
 </div>
